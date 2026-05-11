@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="FormAuthentication/FormAuthentication.csproj" Id="7ee5ff0e-5e6a-4b58-83c1-4ab43b51ed4c" />
+  <Project Path="WindowAuthentication/WindowAuthentication.csproj" Id="0f489314-f9a1-4d55-9906-749bf34e9aa5" />
+</Solution>

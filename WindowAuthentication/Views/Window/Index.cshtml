@@ -1,0 +1,31 @@
+﻿@model List<WindowAuthentication.Models.Employee>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Window Authentication</h2>
+
+<h1>Hello @User.Identity.Name!!, View is Window Authenticated</h1>
+
+
+
+<h2>Employee List</h2>
+
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>DOB</th>
+        <th>Age</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.DOB.ToShortDateString()</td>
+            <td>@item.Age</td>
+        </tr>
+    }
+</table>

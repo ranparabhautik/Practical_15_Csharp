@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Form Authentication </h2>
+
+@if (User.Identity.IsAuthenticated)
+            {
+                <h3> Welcome!! @User.Identity.Name , you are now logged in </h3>
+                <button class="btn btn-danger">@Html.ActionLink("Logout","Logout","User")</button>
+            }
+else
+            {
+                <button class="btn btn-success">@Html.ActionLink("Login","Login","User")</button>
+            }
+
+
+
